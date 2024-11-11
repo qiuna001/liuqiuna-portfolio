@@ -1,0 +1,176 @@
+:root {
+    --neon-primary: #00f3ff;
+    --neon-secondary: #9d00ff;
+    --dark-bg: #0a0a0a;
+    --text-light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* AI背景动画 */
+.ai-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#matrix-rain {
+    width: 100%;
+    height: 100%;
+}
+
+/* 导航栏样式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--neon-primary);
+}
+
+/* 主页面样式 */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.glitch {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0 0 10px var(--neon-primary);
+    margin-bottom: 1rem;
+}
+
+.typing-text {
+    font-size: 1.5rem;
+    color: var(--neon-secondary);
+}
+
+/* 章节通用样式 */
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--neon-primary);
+    text-shadow: 0 0 10px var(--neon-primary);
+}
+
+/* 作品展示区样式 */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.work-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px var(--neon-secondary);
+}
+
+/* 技能条样式 */
+.skills {
+    margin-top: 2rem;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--neon-primary);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background: var(--neon-primary);
+    transition: width 1.5s ease;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .glitch {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}Create style.css
