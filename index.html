@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘秋娜的个人主页</title>
+    <!-- 引入字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- 引入动画库 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 引入打字效果库 -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- 引入自定义样式和脚本 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- AI风格背景 -->
+    <div class="ai-background">
+        <canvas id="matrix-rain"></canvas>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">刘秋娜</div>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#about">关于</a>
+                <a href="#works">作品</a>
+                <a href="#videos">视频</a>
+                <a href="#contact">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页面区域 -->
+    <section id="home" class="hero">
+        <div class="glitch-container">
+            <h1 class="glitch" data-text="创意设计师">创意设计师</h1>
+            <div class="typing-text">
+                <span id="typed-text"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">关于我</h2>
+            <div class="about-content" data-aos="fade-up">
+                <div class="about-text">
+                    <p>这里是您的个人介绍，可以描述您的专业背景、技能特长和工作经验等。</p>
+                </div>
+                <div class="skills">
+                    <div class="skill-item" data-progress="90">
+                        <span class="skill-name">UI设计</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示区 -->
+    <section id="works" class="works">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">作品展示</h2>
+            <div class="works-grid">
+                <!-- 作品卡片将通过JS动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频展示区 -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">视频作品</h2>
+            <div class="video-grid">
+                <!-- 视频卡片将通过JS动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">联系我</h2>
+            <div class="social-links" data-aos="fade-up">
+                <a href="#" class="social-link">
+                    <img src="qr-wechat.jpg" alt="微信">
+                    <span>微信公众号</span>
+                </a>
+                <a href="#" class="social-link">
+                    <img src="qr-video.jpg" alt="视频号">
+                    <span>视频号</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 引入AOS库 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 引入自定义脚本 -->
+    <script src="main.js"></script>
+</body>
+</html>Create index.html
